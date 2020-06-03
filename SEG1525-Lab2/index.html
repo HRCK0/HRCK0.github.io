@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Food Food Go</title>
 	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
 	<link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+  <h1>Food Food Go</h1>
 
 <!-- Tab links, each one with an onclick event associated with it -->
 <div class="tab">
@@ -16,15 +18,21 @@
 
 <!-- Tab content -->
 <div id="Client" class="tabcontent">
+
   <h3>Client Information</h3>
   <p>Tell us a bit about you.</p>
-	Choose a Category:
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-	<option value=""></option>
-	<option value="Vegetarian">Vegetarian</option>
+  Choose a Category:<br>
+  
+  <input type="checkbox" id="dietSelectVeg" value="vegCheckbox" onchange="populateListProductChoices('displayProduct')">Vegetarian<br>
+  <input type="checkbox" id="dietSelectGlu" value="gluCheckbox" onchange="populateListProductChoices('displayProduct')">GlutenFree<br>
+  <input type="checkbox" id="dietSelectOrg" value="orgCheckbox" onchange="populateListProductChoices('displayProduct')">Organic<br>
+	<!-- <select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+	  <option value=""></option>
+	  <option value="Vegetarian">Vegetarian</option>
     <option value="GlutenFree">GlutenFree</option>
     <option value="None">None</option>
-	</select>
+  </select> -->
+  
 </div>
 
 <div id="Products" class="tabcontent">
@@ -47,4 +55,9 @@
 <script src="scripts/main.js"></script>
 
 </body>
+
+<footer>
+  <p class="signature">Website designed by Vanya Prokic</p>
+</footer>
+
 </html>
