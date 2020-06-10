@@ -22,7 +22,7 @@
   <div id="Client" class="tabcontent">
     <h2>Welcome to Food Food Go!</h2>
     <h3>Filters</h3>
-    Choose which food to display:<br>
+    Choose which food to filter:<br>
 
     <input type="checkbox" id="dietSelectVeg" value="vegCheckbox"
       onchange="populateListProductChoices('displayProduct')">Vegetarian<br>
@@ -41,12 +41,26 @@
 
   <div id="Products" class="tabcontent">
     <h3>Avaiable Products</h3>
+    <div class="productsTab">
+      <div class="filter">
+        <input type="checkbox" id="filterFruit" value="fruitCheckbox"
+          onchange="populateListProductChoices('displayProduct')">Fruit
+      </div>
+      <div>
+        <input type="checkbox" id="filterVegie" value="vegieCheckbox"
+          onchange="populateListProductChoices('displayProduct')">Vegetables
+      </div>
+      <div>
+        <input type="checkbox" id="filterMeat" value="meatCheckbox"
+          onchange="populateListProductChoices('displayProduct')">Meat
+      </div>
+    </div>
     Check the items you wish to purchase:
 
-    
+
     <div id="displayProduct"></div>
     <button id="addCart" type="button" class="block" onclick="selectedItems()">
-      Add selected items to cart.
+      Update the cart
     </button>
   </div>
 

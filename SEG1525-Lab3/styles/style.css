@@ -13,6 +13,10 @@
   height: 300px;
 }
 
+.filter {
+  float: left;
+}
+
 /* Style the buttons that are used to open the tab content */
 .tab button {
   display: block;
@@ -40,7 +44,7 @@
 /* Style the tab content */
 .tabcontent {
   float: left;
-  overflow: scroll;
+  overflow: auto;
   padding: 0px 12px;
   border: 1px solid #ccc;
   width: 70%;
