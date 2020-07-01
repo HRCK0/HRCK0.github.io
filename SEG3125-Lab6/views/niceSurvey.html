@@ -1,0 +1,107 @@
+<html>
+
+<head>
+  <title>Questionnaire</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+</head>
+
+<body>
+
+  <div class="container-md p-3 my-3 border bg-dark text-white" id="survey">
+    <h1>Survey</h1>
+    <form class="firstForm">
+
+      <!-- Choose a website to evaluate -->
+      <h2 class="centerText">What do you think of the UI in this <a href="https://www.apple.com/ca/">Apple</a> website?
+      </h2>
+      <!-- You should make your image clickable -->
+
+      <div>
+        <a href="https://www.apple.com/ca/"> <img class="center"
+            src="https://content.fortune.com/wp-content/uploads/2016/07/screen-shot-2016-07-08-at-10-38-12-am.png"
+            alt="Apple.ca" width="800"></a>
+      </div>
+
+      <br>
+      <div class="centerText">
+        <h2> Personal Information </h2>
+        <p><b>First and Last name:</b> <br><input type="text" name="names" placeholder="Tim Johnson" required></p>
+
+      </div>
+
+      <div class="centerText">
+        <h2> What do you like </h2>
+        <b>I like:</b><br>
+        <input type="checkbox" name="phones" value="iPhone 7">iPhone 7<br>
+        <input type="checkbox" name="phones" value="iPhone 8">iPhone 8<br>
+        <input type="checkbox" name="phones" value="iPhone X">iPhone X<br>
+
+        <!-- <br><b>What is your favorite programming language?</b><br>
+        <select id="favorite">
+          <option value="Apples">C/C++</option>
+          <option value="Oranges">JavaScript</option>
+          <option value="Bananas">Ruby</option>
+        </select>
+      </div> -->
+
+      <br>
+
+      <h2>What is your favorite product?</h2>
+      I like:<br>
+      <select name="products">
+        <option value="mac" selected="selected">Mac</option>
+        <option value="iphone">iPhone</option>
+        <option value="ipod">iPod</option>
+        <option value="ipad">iPad</option>
+      </select>
+
+      <div class="centerText">
+        <br> Comments:<br>
+        <textarea rows="5" cols="30" name="comments"></textarea>
+      </div>
+
+      <br><br><button type="submit" class="btn btn-warning" id="bb">Submit</button>
+      <p id="thanks"></p>
+    </form>
+    <!-- <form>
+      <h2> What fruits(s) do you like? </h2>
+      I like:<br>
+      <input type="text" name="fruit" placeholder="fruit name..." required />
+
+      <br>
+      <br>
+
+      <h2> What color(s) do you like? </h2>
+	    I like:<br>
+		  <input type="checkbox" name="color" value="Red"> Red<br>
+		  <input type="checkbox" name="color" value="Green"> Green<br>
+      <input type="checkbox" name="color" value="Blue"> Blue<br>
+
+      <br>
+
+      <h2>What is your favorite animal?</h2>
+      I like:<br>
+      <select name="animal">
+			  <option value="Cat" selected="selected">Cat</option>
+			  <option value="Dog">Dog</option>
+			  <option value="Turtle">Turtle</option>
+      </select>
+
+      <br>
+      <br>
+      <button type="submit" class="btn btn-warning" id="bb">Submit</button>
+      <p id="thanks"></p>
+    </form> -->
+  </div>
+  <script src="/public/assets/action.js"></script>
+</body>
+
+</html>
