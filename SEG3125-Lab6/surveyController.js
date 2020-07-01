@@ -46,8 +46,8 @@ module.exports = function(app){
         var products = readData("products");
         var phones = readData("phones");
         var names = readData("names");
-        res.render('showResults', {results: [comments, products, phones, names]});
-        console.log([comments, products, phones, names]);
+        res.render('showResults', {results: [names, phones, products, comments]});
+        console.log([names, phones, products, comments]);
     });
 
     // when a user goes to localhost:3000/niceSurvey
@@ -65,7 +65,7 @@ module.exports = function(app){
         for (var key in json){
             console.log(key + ": " + json[key]);
             // in the case of checkboxes, the user might check more than one
-            if ((key === "color") && (json[key].length === 2)){
+            if ((key === "products") && (json[key].length === 2)){
                 for (var item in json[key]){
                     combineCounts(key, json[key][item]);
                 }

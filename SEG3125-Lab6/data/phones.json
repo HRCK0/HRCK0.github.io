@@ -1,14 +1,14 @@
 [
     {
-        "phones": "iPhone 7",
+        "phone": "iPhone 7",
         "count": 0
     },
     {
-        "phones": "iPhone 8",
+        "phone": "iPhone 8",
         "count": 0
     },
     {
-        "phones": "iPhone X",
+        "phone": "iPhone X",
         "count": 0
     }
 ]

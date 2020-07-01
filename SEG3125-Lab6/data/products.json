@@ -1,18 +1,18 @@
 [
     {
-        "products": "mac",
+        "product": "mac",
         "count": 0
     },
     {
-        "products": "iphone",
+        "product": "iphone",
         "count": 0
     },
     {
-        "products": "ipod",
+        "product": "ipod",
         "count": 0
     },
     {
-        "products": "ipad",
+        "product": "ipad",
         "count": 0
     }
 ]
